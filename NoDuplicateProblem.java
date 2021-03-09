@@ -16,6 +16,8 @@ public class NoDuplicateProblem {
         Scanner r = new Scanner(System.in);
         
         String words = r.nextLine();
+        if (words.length() > 80) System.exit(0);
+
         String arrWords[] = words.split(" ");
         // add flag
         boolean flag = true;
